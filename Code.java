@@ -1,0 +1,26 @@
+import java.awt.*;
+import java.applet.*;
+ public class Code extends Applet
+{	
+	String fname;
+	String lname; String clgname; String class; String div; String rno;
+	public void init()
+	{
+		fname=getParameter("prerana");
+		lname=getParameter("malge");	
+		clgname=getParameter("hrm");
+		class=getParameter("tybcs");
+		div=getParameter("A");
+		rno=getParameter("10");	
+	}
+	public void paint(Graphics g)
+	{
+		g.drawString(fname,10,20);
+		g.drawString(lname,10,30);
+		g.drawString(clgname,10,40);
+		g.drawString(class,10,50);
+		g.drawString(div,10,60);
+		g.drawString(rno,10,70);
+	}
+
+}
